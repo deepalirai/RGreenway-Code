@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<NetworkLink>
+		<visibility>1</visibility>
+		<flyToView>1</flyToView>
+		<name>NWS Forecast: </name>
+		<Link>
+			<refreshMode>onInterval</refreshMode>
+			<refreshInterval>21600</refreshInterval>
+			<href><![CDATA[http://forecast.weather.gov/MapClick.php?lat=35.84474&lon=-78.66915&FcstType=kml&FcstType=kml&KmlType=Forecast]]></href>
+		</Link>
+	</NetworkLink>
+	<NetworkLink>
+		<visibility>1</visibility>
+		<name>NOAA/NWS Logos</name>
+		<Link>
+			<href>http://forecast.weather.gov/branding.kml</href>
+		</Link>
+	</NetworkLink>
+</Document>
+	</kml>

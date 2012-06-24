@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+     <ImageButton
+          android:id="@+id/button1"
+          android:layout_width="64dp"
+          android:layout_height="63dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_launcher_calin"
+          android:layout_alignParentBottom="true" 
+          android:background="@color/white"
+          />
+     	  
+     <ImageButton
+          android:id="@+id/button2"
+          android:layout_width="64dp"
+          android:layout_height="63dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_launcher_weatherin"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@+id/button1"
+          android:background="@color/white"
+           />
+     <ImageButton
+          android:id="@+id/button3"
+          android:layout_width="64dp"
+          android:layout_height="63dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_launcher_workin"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@+id/button2"
+          android:background="@color/white"
+           />
+     <ImageButton
+          android:id="@+id/button4"
+          android:layout_width="64dp"
+          android:layout_height="63dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_launcher_socin"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@+id/button3"
+          android:background="@color/white"
+           />
+	<ImageButton
+          android:id="@+id/button5"
+          android:layout_width="64dp"
+          android:layout_height="63dp"
+          android:src="@drawable/ic_launcher_scfin"
+          android:scaleType="fitXY"
+          android:layout_alignParentBottom="true"
+          android:layout_toRightOf="@+id/button4"
+          android:background="@color/white"
+          
+           />
+	
+	<TextView 
+	    android:id="@+id/weather"
+	    android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/banner"
+        android:layout_toRightOf="@+id/temp"
+        android:textColor="#32CD32"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+
+          
+	    />
+	<TextView 
+	    android:id="@+id/temp"
+	    android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/banner"
+        android:textColor="#32CD32"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="20dp"
+        android:paddingLeft="90dp"
+        
+               
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/calendar1"
+	    android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/banner"
+        android:textColor="#32CD32"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="2dp"
+        android:paddingLeft="20dp"
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/calendar2"
+	    android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/banner"
+        android:textColor="#32CD32"
+        android:textStyle="bold"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="2dp"
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/calendar3"
+	    android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/calendar2"
+        android:textColor="#32CD32"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingTop="0dp"
+        android:paddingLeft="20dp"
+	    
+	    />
+	<ImageView 
+	    android:id="@+id/weathericon"
+	    android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/banner"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitXY"
+	    />
+	
+<!-- temporary code -->	
+	<ImageButton
+          android:id="@+id/cal"
+          android:layout_width="fill_parent"
+          android:layout_height="100dp"
+          android:src="@drawable/cal"
+          android:scaleType="fitXY"
+          android:layout_below="@+id/banner"
+          
+           />
+	
+
+
+	<ImageView
+          android:id="@+id/banner"
+          android:layout_width="fill_parent"
+          android:src="@drawable/ic_launcher_banner"
+          android:layout_height="40dp"
+          android:layout_alignParentTop="true"
+           />
+		
+      <com.google.android.maps.MapView
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/mapview"
+          android:layout_width="fill_parent"
+          android:layout_height="350dp"
+          android:layout_above="@+id/button1"
+          android:layout_below="@+id/banner"
+          android:layout_alignParentLeft="true"
+          android:apiKey="0vtMsYjBAn6rDm4o_JZ0nh9lHHBWTvg1bF7BzgQ"
+          android:clickable="true" >
+             
+      </com.google.android.maps.MapView>
+
+      <WebView
+          android:id="@+id/webView1"
+          android:layout_width="fill_parent"
+          android:layout_height="410dp"
+          android:layout_alignTop="@+id/mapview"
+          android:layout_centerHorizontal="true"
+           />
+
+      </RelativeLayout>
+<!-- android:layout_alignParentLeft="true" -->
+        

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="assets"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/android-sdks/platforms/android-15/android.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/android-sdks/tools/support/annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Owner/android-sdks/add-ons/addon-google_apis-google-15/libs/maps.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Owner/android-sdks/add-ons/addon-google_apis-google-15/docs/reference"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

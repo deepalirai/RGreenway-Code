@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.rgapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10"/>
+    
+    <!-- Google Maps API Key: 0vtMsYjBAn6rDm4o_JZ0nh9lHHBWTvg1bF7BzgQ -->
+    
+    <!-- List of Features Used  -->
+    	<uses-feature android:name="android.hardware.location" android:required="true" />
+    	<uses-feature android:name="android.hardware.location.network" android:required="true" />
+		<uses-feature android:name="android.hardware.location.gps" android:required="true" />
+		<uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    	<uses-feature android:name="android.hardware.wifi" android:required="true" />
+  	<!-- End Feature List -->  
+  	
+  <!-- List of Required Permissions -->
+  		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  		<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  		<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  		<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  		<uses-permission android:name="android.permission.INTERNET" />
+  		<uses-permission android:name="android.permission.WRITE_GSERVICES" />		
+  	<!-- End Required Permissions List -->
+  	
+  	<!-- Begin Supported Display Information -->
+  	<supports-screens 	android:resizeable="true"
+				 	  	android:smallScreens="false"
+                  		android:normalScreens="true"
+                  		android:largeScreens="false"
+                  		android:xlargeScreens="false"
+                  		android:anyDensity="false"/>
+	<!-- End Supported Display Information -->
+	
+    <application
+        android:icon="@drawable/logo"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+               
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MapsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+              
+        <uses-library android:name="com.google.android.maps"/>
+        
+    </application>
+
+</manifest>
+
+<!-- C:\Users\Owner\android-sdks\platform-tools>adb install c:\Users\Owner\Downloads\
+RGreenway\RGreenway.apk -->
